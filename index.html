@@ -1,43 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
+<html lang="pt"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Alpha</title>
+    <link rel="stylesheet" href="xcss/style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-        *{
-            top: 0;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background: #2c2c2c;
-            color: #ffffff;
-            
-        }
-        .cent{
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-        }
-        .title{
-            font-family: 'Orbitron', sans-serif;
-            color: #00ff00;
-        }
-        .main{
-            background: #101010;
-            margin: 20% 2%;
-            width: 90%;
-            padding: 3%;
-            border-radius: 8px;
-        }
+        
     </style>
 </head>
 <body class="cent">
     <div class="main">
-        <h1 class="title"></h1>
+        <div class="typer">
+            <h1 class="title"></h1>
+        </div>
+        
+
     </div>
-    <script src='scripts/type.js'></script>
+    <div class="cdown cent">
+        <h1 class="title">Lançamento em</h1>
+        <div class="cont cent">
+            <span class="d label">Dias</span>
+            <span class="h label">Horas</span>
+            <span class="m label">Minutos</span>
+            <span class="s label">Segundos</span>
+        </div>
+        <div class="num">
+            <span class="time days">00</span>
+            <span class="time hours">00</span>
+            <span class="time minutes">00</span>
+            <span class="time seconds">00</span>
+        </div>
+        
+    </div>
+    <button type="button" class="Go" disabled>Acessar</button>
+    </div>
+
+    
+    <script src="scripts/type.js"></script>
+    <script src="scripts/cd.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
