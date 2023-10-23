@@ -17,7 +17,7 @@ function Typing() {
         setTimeout(Typing, vel)
     }    
     else {
-        setTimeout(show(), 1500)
+        setTimeout(show(), 2000)
     }
 }
 
