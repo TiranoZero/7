@@ -1,27 +1,122 @@
- @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-        *{
-            top: 0;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background: #2c2c2c;
-            color: #ffffff;
-            
-        }
-        .cent{
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-        }
-        .title{
-            font-family: 'Orbitron', sans-serif;
-            color: #00ff00;
-        }
-        .main{
-            background: #101010;
-            margin: 20% 2%;
-            width: 90%;
-            padding: 3%;
-            border-radius: 8px;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.cent{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+body{
+    background: #2c2c2c;
+    color: #ffffff;          
+}
+
+.main{
+    background: #101010;
+    margin: 20% 2%;
+    width: 90%;
+    padding: 3%;
+    border-radius: 8px;
+}
+
+.title{
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff00;
+}
+
+/*==========================================*/
+
+.cdown{
+    background: #101010;
+    width: 60%;
+    margin: 10% 15%;
+    padding: 5%;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    
+}
+
+.time {
+    background: #000000;
+    font-size: 30pt;
+    border-radius: 8px;
+    padding: 5%;
+    font-family: 'Arial';
+    letter-spacing: 2px;
+    margin-left:7%;
+}
+
+
+.num{
+    display: flex;
+}
+
+.cont {
+    margin-left: -25%;
+    margin: 2%;
+    display: flex;
+}
+
+.label{
+    font-size: 20pt;
+    font-family: 'Arial';
+    padding: 0px;
+}
+
+.d{
+   margin-left: 3%;
+
+}
+.h{
+    margin-left:16%;
+}
+.m{
+    margin-left:15%;
+}
+.s{
+   margin-left: 10%;
+}
+/*==========================================*/
+.go{
+    width: 30%;
+    padding: 3%;
+    display:none;
+    background: #00aa00;
+    color: #ffffff;
+    font-size: 15pt;
+    text-shadow: 0 0 10px #000;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #0f0;
+}
+.go:hover{
+    background: #00ff00;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000;
+}
+
+.go:active{
+    background: #000;
+    box-shadow: 0 0 10px #0f0;
+}
+
+@media only screen and (max-width: 600px) {
+    .cdown{
+        width:80%;
+        margin:55% 5%;
+    }
+    .label{
+        font-size:11pt;
+        margin:0 3% 0 7%;
+    }
+    .time{
+        font-size:16pt;
+        margin:3%;
+    }
+}
