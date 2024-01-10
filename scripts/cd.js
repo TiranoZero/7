@@ -4,7 +4,7 @@ hora = document.querySelector('.hours')
 minuto = document.querySelector('.minutes')
 segundos = document.querySelector('.seconds')
 
-dDay = new Date(`January 12 2024 00:00:00`) 
+dDay = new Date(`January 12 2024 20:00:00`) 
 
 
 const countdown =  ()=> {
