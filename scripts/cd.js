@@ -23,3 +23,9 @@ segundos.textContent = seconds < 10 ? '0' + seconds : seconds
 }
 
 setInterval(countdown, 1000)
+
+if(days === 0 || hours === 0 || minutes === 0 || seconds === 0 ){
+    open("https://projetoalpha.tech/home") 
+}else{
+  alert(days + "- " + hours + "- " + minutes+ "- " +seconds)
+}
