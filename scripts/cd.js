@@ -25,8 +25,8 @@ segundos.textContent = seconds < 10 ? '0' + seconds : seconds
 setInterval(countdown, 1000)
 
 setTimeout(()=>{
-if(days === 0 || hours === 0 || minutes === 0 || seconds === 0 ){
+if(dia.textContent == 0 || hora.textContent == 0 || minuto.textContent == 0 || segundos.textContent == 0 ){
     open("https://projetoalpha.tech/home") 
 }else{
-  alert(days + "- " + hours + "- " + minutes+ "- " +seconds)
-}}, 1500)
+  alert(dia.textContent + "- " + hora.textContent + "- " + minuto.textContent + "- " + segundos.textContent)
+}}, 2000)
