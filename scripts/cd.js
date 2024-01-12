@@ -25,4 +25,4 @@ segundos.textContent = seconds < 10 ? '0' + seconds : seconds
 
 setInterval(countdown, 1000)
 */
-setTimeout(window.open("https://projetoalpha.tech/home/404.html", '_self') , 2000)
+setTimeout(window.open("https://projetoalpha.tech/home", '_self') , 2000)
