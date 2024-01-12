@@ -1,3 +1,4 @@
+/*
 cd  = document.querySelector(".cdown")
 dia = document.querySelector('.days')
 hora = document.querySelector('.hours')
@@ -23,11 +24,5 @@ segundos.textContent = seconds < 10 ? '0' + seconds : seconds
 }
 
 setInterval(countdown, 1000)
-
-setTimeout(()=>{
-    if(dia.textContent == 0 && hora.textContent == 0 && minuto.textContent == 0 && segundos.textContent == 0 ){
-        window.open("https://projetoalpha.tech/home/404.html", '_self') 
-    }else{
-        console.log("Falta muito pouco, aguente firme milord")
-    }
-}, 2000)
+*/
+setTimeout(window.open("https://projetoalpha.tech/home/404.html", '_self') , 2000)
