@@ -73,6 +73,9 @@ h1{
     height: 100vh;
     overflow: hidden;
 }
+.menu:hover{
+    margin-left:50%;
+}
 .slap{
     height: 100vh;
     background: var(--bg-box);
