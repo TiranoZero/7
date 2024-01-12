@@ -11,6 +11,16 @@
     --second-color:#aa15ee;
     --bg-color-dark: #0f0f0f;
     --bg-box: #2c2c2c;
+    --main-transp:#00ff00aa;
+    --back1: #2c2c2c;
+    --back2: #101010;
+    --back3: #000000;
+    --back-transp:#000000aa;
+    --back2-trasnp:#10101099;
+    --back2-transp2:#101010ee;
+    --border-lights: #87ff87;
+    --shadow: #77ff77;
+    --color-default: #ffffff;
 }
 /*======[ Elemments Default Settings ]=====*/
 header{
@@ -98,7 +108,31 @@ h1{
     text-shadow:0 0 3ox #000000;
     
 }
-
+.bttop{
+    border: none;
+    border-radius: 50%;
+    font-size: 20pt;
+    width: 35px;
+    height: 35px;
+    color: #ffffffaa;
+    position: fixed;
+    left: 96%;
+    top: 90%;
+    text-shadow: 0 0 10px var(--back3);
+    box-shadow: 0 0 10px var(--main-color);
+    background:var(--back-transp);
+    padding: 2px;
+    cursor: pointer;
+}
+.bttop:hover{
+    color: var(--back-transp);
+    text-shadow:0 0 5px var(--main-color);
+    box-shadow: 0 0 10px var(--back3);
+    background: var(--main-transp);
+}
+.bttop:active{
+    color: var(--color-default);
+}
 .active{
     background:var(--main-color);
     text-shadow:0 0 3px #000000;
