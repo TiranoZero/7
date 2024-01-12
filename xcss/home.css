@@ -1,0 +1,90 @@
+
+/*=======[Set Fonts Import]=======*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/*==============[ Padrão ]==============*/
+*{margin: 0;padding: 0;}
+
+:root{
+    --font-default: #ffffff;
+    --main-color: #00ff00;
+    --second-color:#aa15ee;
+    --bg-color-dark: #0f0f0f;
+    --bg-box: #2c2c2c;
+}
+/*======[ Elemments Default Settings ]=====*/
+header{
+    background: var(--bg-color-dark);
+    width: 100%;
+    padding:1% 0;
+    float: left;
+}
+
+body{
+    font: 16pt Arial;
+    align-items: center;
+}
+
+p{
+    text-align: justify;
+    text-indent: 2%;
+    text-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color: var(--font-default);
+}
+
+button{
+    padding: 1% 2%;
+    border: none;
+    border-radius: 8px;
+    font: 16pt Arial;
+    background: var(--main-color);
+    box-shadow: 1px 2px #00dd00, -1px 1px #00dd00;
+    color: var(--font-default);
+    text-shadow: 1px 1px 3px #000000;
+}
+
+li{
+    list-style-type: none;
+}
+h1{
+    color: var(--main-color);
+}
+/*=======[ Class Settings ]=======*/
+
+.cabec{
+    padding: 2;
+}
+
+.title{
+    margin:1%;
+    width: 21%;
+    font: bold 25pt 'Orbitron', sans-serif, Arial;
+    letter-spacing: 2px;
+}
+
+.menu{
+    
+    margin: 2% -95% 0;
+    width: 100%;
+    background: #000000ee;
+    height: 100vh;
+    overflow: hidden;
+}
+.slap{
+    height: 100vh;
+    background: var(--bg-box);
+    float: left;
+    width: 50%;
+    text-align: center;
+    position: relative;
+
+}
+.op{
+    font: bold 15pt 'Orbitron', sans-serif, Arial;
+    width: 20%;
+    padding:1% 3%;
+    margin: 2%;
+}
