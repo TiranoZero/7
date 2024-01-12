@@ -66,16 +66,17 @@ h1{
 }
 
 .menu{
-    
     margin: 2% -95% 0;
     width: 100%;
     background: #000000ee;
     height: 100vh;
     overflow: hidden;
 }
+
 .menu:hover{
     margin-left:0;
 }
+
 .slap{
     height: 100vh;
     background: var(--bg-box);
@@ -86,6 +87,7 @@ h1{
 
 }
 .op{
+    background: #1c1c1c;
     font: bold 15pt 'Orbitron', sans-serif, Arial;
     width: 20%;
     padding:1% 3%;
