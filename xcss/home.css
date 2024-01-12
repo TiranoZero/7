@@ -93,6 +93,11 @@ h1{
     padding:1% 3%;
     margin: 2%;
 }
+.op{
+    background:#aa15ff;
+    text-shadow:0 0 3ox #000000;
+}
+
 .active{
     background:var(--main-color);
     text-shadow:0 0 3px #000000;
