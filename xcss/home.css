@@ -154,3 +154,10 @@ h1{
     background:var(--main-color);
     text-shadow:0 0 3px #000000;
 }
+
+/*=========[ MEDIAQUERY ]==========*/
+@media only and screen (max-width:300px ) {
+    header{
+        text-align:center;
+    }
+}
