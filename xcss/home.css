@@ -156,10 +156,11 @@ h1{
 }
 
 /*=========[ MEDIAQUERY ]==========*/
-@media only screen and (max-width:300px ) {
+@media only screen and (max-width:400px ) {
     header{
         text-align:center;
         width:100%;
+        padding:-10% 1%;
     }
     .title{
         color:#a0f;
