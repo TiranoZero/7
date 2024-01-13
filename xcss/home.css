@@ -138,7 +138,8 @@ h1{
     text-shadow: 0 0 10px var(--back3);
     box-shadow: 0 0 10px var(--main-color);
     background:var(--back-transp);
-    padding: 2px;
+    padding: 3px;
+    text-align:center;
     cursor: pointer;
 }
 .bttop:hover{
@@ -156,6 +157,12 @@ h1{
 }
 
 /*=========[ MEDIAQUERY ]==========*/
+.bttop{
+    width:40px;
+    height:40px;
+    margin-left:-10%;
+    line-height: 50%;
+}
 @media only screen and (max-width:400px ) {
     header{
         text-align:center;
