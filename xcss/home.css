@@ -156,7 +156,7 @@ h1{
 }
 
 /*=========[ MEDIAQUERY ]==========*/
-@media only and screen (max-width:300px ) {
+@media only screen and (max-width:300px ) {
     header{
         text-align:center;
     }
