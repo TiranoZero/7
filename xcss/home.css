@@ -160,11 +160,18 @@ h1{
     header{
         text-align:center;
         width:100%;
-        padding:-10% 1%;
+        padding:-3% 1%;
     }
     .title{
         color:#a0f;
         font-size:18pt;
         width:100%;
+    }
+    .slap{
+        width:99%
+    }
+    .op{
+        padding:5%;
+        margin:1% 0;
     }
 }
