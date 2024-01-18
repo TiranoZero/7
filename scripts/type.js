@@ -1,5 +1,5 @@
 txt = 'Projeto Alpha Iniciado...'
-inputContainer = document.querySelector('.title')
+inputContainer = document.querySelector('.saud')
 
 vel = 40
 i = 0
