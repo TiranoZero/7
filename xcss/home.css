@@ -143,12 +143,14 @@ h1{
     padding: 3px;
     text-align:center;
     cursor: pointer;
+    transition: background .7s;
 }
 .bttop:hover{
     color: var(--back-transp);
     text-shadow:0 0 5px var(--main-color);
     box-shadow: 0 0 10px var(--back3);
     background: var(--main-transp);
+    transition: background .7s;
 }
 .bttop:active{
     color: var(--color-default);
