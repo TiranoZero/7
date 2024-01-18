@@ -5,7 +5,7 @@ inputContainer = document.querySelector('.title')
 i = 0
 
 
-function Typing(onde, frase, velocidade=40) {
+function Typing(show, onde, frase, velocidade=40) {
     if (i < frase.length) {
         onde.innerHTML += frase.charAt(i)
         i++
@@ -14,9 +14,9 @@ function Typing(onde, frase, velocidade=40) {
     else {
         setTimeout(()=>{
             typer.style.display = "none"
-            cd.style.display = "block"
+            show.style.display = "block"
         }, 2000)
     }
 }
 
-window.addEventListener('load', Typing(inputContainer, txt))
+window.addEventListener('load', Typing(cd, inputContainer, txt))
