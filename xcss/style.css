@@ -4,9 +4,7 @@
     margin: 0;
     padding: 0;
 }
-.cabec{
-    display: none;
-}
+
 .cent{
     align-items: center;
     text-align: center;
@@ -17,7 +15,10 @@ body{
     background: #2c2c2c;
     color: #ffffff;          
 }
-
+p{
+    font: italic 14pt Arial;
+    letter-spacing:2%;
+}
 .main{
     background: #101010;
     margin-left:7%;
