@@ -1,22 +1,22 @@
 typer = document.querySelector('.main')
 cd = document.querySelector('.cdown')
-txt = 'Projeto Alpha Iniciado...'
+frase = 'Projeto Alpha Iniciado...'
 inputContainer = document.querySelector('.title')
+vel = 40
 i = 0
 
-
-function Typing(show, onde, frase, velocidade=40) {
+function Typing() {
     if (i < frase.length) {
-        onde.innerHTML += frase.charAt(i)
+        inputContainer.innerHTML += frase.charAt(i)
         i++
-        setTimeout(Typing(show, onde, frase), velocidade)
+        setTimeout(Typing, vel)
     }    
     else {
-        setTimeout(()=>{
-            typer.style.display = "none"
-            show.style.display = "block"
-        }, 2000)
+        show = ()=>{
+        typer.style.display = "none"
+        cd.style.display = "block"}
+        setTimeout(show, 2000)
     }
 }
 
-window.addEventListener('load', Typing(cd, inputContainer, txt))
+window.addEventListener('load', Typing)
