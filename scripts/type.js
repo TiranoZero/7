@@ -15,5 +15,8 @@ function Typing(onde,frase) {
         setTimeout(Typing(onde, frase), vel)
     }    
 }
-Typing(el, txt)
+
+window.onload(Typing(el, txt))
+
+
 
