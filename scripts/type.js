@@ -9,7 +9,7 @@ function Typing(show, onde, frase, velocidade=40) {
     if (i < frase.length) {
         onde.innerHTML += frase.charAt(i)
         i++
-        setTimeout(Typing, vel)
+        setTimeout(Typing, velocidade)
     }    
     else {
         setTimeout(()=>{
