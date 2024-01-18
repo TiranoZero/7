@@ -98,9 +98,11 @@ h1{
     background: #000000ee;
     height: 100vh;
     overflow: hidden;
+    transition:margin 1s;
 }
 
 .menu:hover{
+    transition:margin 1s;
     margin-left:0;
 }
 
@@ -156,13 +158,13 @@ h1{
     text-shadow:0 0 3px #000000;
 }
 
-/*=========[ MEDIAQUERY ]==========*/
 .bttop{
     width:40px;
     height:40px;
     margin-left:-10%;
     line-height: 120%;
 }
+/*=========[ MEDIAQUERY ]==========*/
 @media only screen and (max-width:400px ) {
     header{
         text-align:center;
