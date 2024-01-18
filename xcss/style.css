@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
 }
-
+.cabec{
+    display: none;
+}
 .cent{
     align-items: center;
     text-align: center;
