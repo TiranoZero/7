@@ -135,7 +135,7 @@ h1{
     height: 35px;
     color: #ffffffaa;
     position: fixed;
-    left: 100%;
+    left: 110%;
     top: 90%;
     text-shadow: 0 0 10px var(--back3);
     box-shadow: 0 0 10px var(--main-color);
