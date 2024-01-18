@@ -19,6 +19,7 @@ p{
     font: italic 14pt Courier;
     letter-spacing:1px;
     text-indent:2%;
+    text-align: justify;
 }
 
 .main{
