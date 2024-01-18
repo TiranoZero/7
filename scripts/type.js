@@ -16,7 +16,7 @@ function Typing(onde,frase) {
     }    
 }
 
-window.onload(Typing(el, txt))
+window.addEventListener("load", Typing(el, txt))
 
 
 
