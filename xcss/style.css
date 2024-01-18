@@ -17,6 +17,7 @@ body{
 }
 
 .main{
+    display: none;
     background: #101010;
     margin-left:7%;
     margin-top:20%;
