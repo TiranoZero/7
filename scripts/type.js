@@ -11,4 +11,4 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
-
+window.addEventListener("load", typeWriter())
