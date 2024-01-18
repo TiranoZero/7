@@ -7,15 +7,13 @@ i = 0
 
 
 
-function main(){
-    function Typing(onde,frase) {
-        if (i < frase.length) {
-            onde.innerHTML += frase.charAt(i)
-            i++
-            setTimeout(Typing(onde, frase), vel)
-        }    
-    }
-    Typing(el, txt)
-}
 
-window.addEventListener('load', main)
+function Typing(onde,frase) {
+    if (i < frase.length) {
+        onde.innerHTML += frase.charAt(i)
+        i++
+        setTimeout(Typing(onde, frase), vel)
+    }    
+}
+Typing(el, txt)
+
