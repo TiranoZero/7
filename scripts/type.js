@@ -5,7 +5,7 @@ var i = 0;
 var speed = 40;
 
 function typeWriter(frase, saida) {
-  if (i < frase.length) {
+  if (i < txt.length) {
     saida.innerHTML += frase.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
