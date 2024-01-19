@@ -4,11 +4,11 @@ var i = 0;
 
 var speed = 40;
 
-function typeWriter() {
-  if (i < txt.length) {
-    el.innerHTML += txt.charAt(i);
+function typeWriter(frase, saida) {
+  if (i < frase.length) {
+    saida.innerHTML += frase.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
 }
-window.addEventListener("load", typeWriter())
+window.addEventListener("load", typeWriter(txt, el))
