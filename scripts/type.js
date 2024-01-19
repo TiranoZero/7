@@ -13,4 +13,11 @@ function typeWriter(frase, saida) {
     }, speed);
   }
 }
-window.addEventListener("load", typeWriter(txt, el))
+
+function main(){
+  typeWriter("Transmissão Iniciada...",document.querySelector("h2.title"))
+  typeWriter(txt, el)
+}
+
+
+window.addEventListener("load", main)
