@@ -4,9 +4,9 @@ txt2 = "Transmissão Iniciada..."
 el2 = document.querySelector("h2")
 var i = 0;
 
-var speed = 40;
+var vel = 40;
 
-function typeWriter(frase, saida) {
+function typeWriter(frase, saida, speed=40) {
   if (i < frase.length) {
     saida.innerHTML += frase.charAt(i);
     i++;
@@ -17,8 +17,8 @@ function typeWriter(frase, saida) {
 }
 
 function main(){
-  typeWriter(txt2, el2)
   typeWriter(txt, el)
+  typeWriter(txt2, el2, 20)
 }
 
 
