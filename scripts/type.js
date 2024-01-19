@@ -8,7 +8,7 @@ function typeWriter() {
   if (i < txt.length) {
     el.innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter(), speed);
+    setTimeout(typeWriter, speed);
   }
 }
 window.addEventListener("load", typeWriter())
