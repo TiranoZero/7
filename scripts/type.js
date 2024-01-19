@@ -2,13 +2,13 @@ txt = 'Bem vindo, seja você viajate ou não, como posso explicar... Talvez voc�
 el = document.querySelector(".saud")
 var i = 0;
 
-var speed = 50;
+var speed = 40;
 
-function typeWriter(frase, saida) {
-  if (i < frase.length) {
-    saida.innerHTML += frase.charAt(i);
+function typeWriter() {
+  if (i < txt.length) {
+    el.innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter(frase, saida), speed);
+    setTimeout(typeWriter(), speed);
   }
 }
-window.addEventListener("load", typeWriter(txt, el))
+window.addEventListener("load", typeWriter())
