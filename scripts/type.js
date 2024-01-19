@@ -5,10 +5,12 @@ var i = 0;
 var speed = 40;
 
 function typeWriter(frase, saida) {
-  if (i < txt.length) {
+  if (i < frase.length) {
     saida.innerHTML += frase.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(()=>{
+      typeWriter(frase, saida)
+    }, speed);
   }
 }
 window.addEventListener("load", typeWriter(txt, el))
