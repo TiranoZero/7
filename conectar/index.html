@@ -90,11 +90,11 @@
 function getUserName(){
     
     // Pegar o local onde será inserida a msg e o nome de usuário
-    const name = document.querySelector(".nome");
     const getBack = document.cookie.slice(5);
     
     // Setar a mensagem que será exibida
-    var msg = "de volta " + getBack;
+    var msg = ", Conectado";
+    var msg2 = ", Se Reconectou"
     
     // Verifica se tem o nome em cookies
     if (getBack.length <= "0" ) {
@@ -105,20 +105,18 @@ function getUserName(){
         document.cookie = "nome=" + username + ";";
         
         // add msg
-        msg2 = username
-        name.innerHTML = msg2
-        
+        typer("Usuário "+username+msg, document.querySelector('h3.title'))
     }else if(getBack == "null" || getBack == ""){
         
         var usernam1 = prompt("Você tem que definir um nome de usuário\n ou isso sempre vai aparecer");
         document.cookie = "nome=" + usernam1 + ";";
         
-        msg3 = usernam1
-        name.innerHTML = msg3
+        
+        typer("Usuário "+username+msg, document.querySelector('h3.title'))
     }
     else{
         
-        name.innerHTML = msg
+        typer("Usuário "+username+msg2, document.querySelector('h3.title'))
     }
 }
 
@@ -129,7 +127,7 @@ function main(){
 }
 
  window.addEventListener("load", main)
-        typer("Usuário "+username+", Conectado", document.querySelector('h3.title'))
+        
     </script>
         
     </div>
