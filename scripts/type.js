@@ -5,18 +5,18 @@ var i = 0;
 
 var vel = 40;
 
-function typeWriter(frase, saida, speed=40) {
+function typer(frase, saida, speed=40) {
   if (i < frase.length) {
     saida.innerHTML += frase.charAt(i);
     i++;
     setTimeout(()=>{
-      typeWriter(frase, saida)
+      typer(frase, saida)
     }, speed);
   }
 }
 
 function main(){
-  typeWriter(txt, el)
+  typer(txt, el)
 }
 
 

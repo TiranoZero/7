@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../xcss/home.css">
+    
+    <title>.: Projeto &#8733;lpha :.</title>
+    <style>
+        .content{
+            align-items: center;
+            text-align: center;
+            top: 20%;
+            left: 12%;
+            width: 70%;
+            position: absolute;
+            z-index: -1;
+            background: #000000aa;
+            box-shadow: 0 0 10px #00ff00;
+            border-radius: 20px;
+            padding: 2% 5%;
+        }
+        .saud{
+            position: relative;
+            width: 90%;
+            left: 5%;
+            top: 20%;
+        }
+
+        body{
+            background: #2c2c2c;
+            color: #fff;
+        }
+        .menu{
+            z-index: 2;
+        }
+        h2.title{
+            color: #00ff00;
+            position: relative;
+            left: 15%;
+            width: 60%;
+            text-align: center;
+        }
+        @media only screen and (max-width: 600px) {
+            .saud{
+                width:90%;
+                left: 5%;
+                top: 15%;
+                text-indent: 2%;
+            }
+            .content{
+                top: 15%;
+                width: 80%;
+                left: 7%;
+            }
+        }
+            </style>
+</head>
+<body>
+    <header class="cabec">
+        <img src="" alt="" class="logo">
+        <h1 class="title">Projeto Alpha</h1>
+    </header>
+    <nav class="menu">
+        <ul class="slap">
+            <div class="pele"></div>
+            <a href="/home"><li class="op">Home</li></a>
+            <a href="/agentes"><li class="op">Agentes</li></a>
+            <a href="/conectar"><li class="op">Conect-se</li></a>
+            <a href="#"><li class="op active">WTF</li></a>
+        </ul>
+    </nav>
+    <script src="../scripts/type.js"></script>
+    <div class="content">
+        <h2 onload='typer("Conectado...", this)' class="title">Transmissão Iniciada...</h2>
+        
+    </div>
+    
+</body>
+</html>
