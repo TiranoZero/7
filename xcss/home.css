@@ -96,7 +96,7 @@ h1{
 .menu{
     margin: 2% -95% 0;
     width: 100%;
-    background: #000000ee;
+    background: linear-gradient(to right, #000000ee, #00000044);
     height: 100vh;
     overflow: hidden;
     transition:margin 1s;
