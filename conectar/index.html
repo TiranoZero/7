@@ -76,7 +76,60 @@
         <h3 class="title"></h3>
     <script>
         var user = prompt("Digite seu username")
-        typer("Usuário "+user+", Conectado", document.querySelector('h3.title'))
+        function timing(number, type){
+    if (type == "sec"){
+        var segundos = number * 1000;
+        return segundos
+    }else if (type == "min"){
+        var minutos = (number * 1000) * 60;
+        return minutos;
+    }
+}
+
+
+function getUserName(){
+    
+    // Pegar o local onde será inserida a msg e o nome de usuário
+    const name = document.querySelector(".nome");
+    const getBack = document.cookie.slice(5);
+    
+    // Setar a mensagem que será exibida
+    var msg = "de volta " + getBack;
+    
+    // Verifica se tem o nome em cookies
+    if (getBack.length <= "0" ) {
+        // Get Name
+        var username = prompt("Digite seu nome de usuário");
+        
+        // ADD Cookei
+        document.cookie = "nome=" + username + ";";
+        
+        // add msg
+        msg2 = username
+        name.innerHTML = msg2
+        
+    }else if(getBack == "null" || getBack == ""){
+        
+        var usernam1 = prompt("Você tem que definir um nome de usuário\n ou isso sempre vai aparecer");
+        document.cookie = "nome=" + usernam1 + ";";
+        
+        msg3 = usernam1
+        name.innerHTML = msg3
+    }
+    else{
+        
+        name.innerHTML = msg
+    }
+}
+
+function main(){
+    
+    setTimeout(getUserName(), timing(10,"sec"))
+    
+}
+
+ window.addEventListener("load", main)
+        typer("Usuário "+username+", Conectado", document.querySelector('h3.title'))
     </script>
         
     </div>
