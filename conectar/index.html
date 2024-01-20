@@ -105,7 +105,7 @@ function getUserName(){
         
         // add msg
         typer("Usuário "+username+msg, document.querySelector('h3.title'))
-    }else if(getBack == "null" || getBack == "", getBack == "undefined"){
+    }else if(getBack == "null" || getBack == ""){
         
         var usernam1 = prompt("Você tem que definir um nome de usuário\n ou isso sempre vai aparecer");
         document.cookie = "nome=" + usernam1 + ";";
