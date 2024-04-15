@@ -151,10 +151,12 @@ body{
 }
 .ref{
     margin: 2%;
+    transition:font-weight .5s ;
 }
 .ref:hover{
     cursor: pointer;
     color: #fff;
+    transition:font-weight .5s ;
     font-weight: bolder;
 }
 
