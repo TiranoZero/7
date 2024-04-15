@@ -1,0 +1,192 @@
+
+/*=======[Set Fonts Import]=======*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/*==============[ Padrão ]==============*/
+*{margin: 0;padding: 0;}
+
+:root{
+    --font-default: #ffffff;
+    --main-color: #00ff00;
+    --second-color:#aa15ee;
+    --bg-color-dark: #0f0f0f;
+    --bg-box: #2c2c2c;
+    --main-transp:#00ff00aa;
+    --back1: #2c2c2c;
+    --back2: #101010;
+    --back3: #000000;
+    --back-transp:#000000aa;
+    --back2-trasnp:#10101099;
+    --back2-transp2:#101010ee;
+    --border-lights: #87ff87;
+    --shadow: #77ff77;
+    --color-default: #ffffff;
+}
+
+/*==========[ ScrollBar ]==========*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+   background: var(--back2);
+   
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    height: 50px;
+    border-radius: 8px;
+    box-shadow:inset 0 0 5px var(--shadow), 0 0 5px var(--shadow);
+    border: 1px solid var(--border-lights);
+}
+
+/*======[ Elemments Default Settings ]=====*/
+header{
+    background: var(--bg-color-dark);
+    width: 100%;
+    padding:1% 0;
+    float: left;
+    user-select: none;
+}
+
+body{
+    font: 16pt Arial;
+    align-items: center;
+}
+
+p{
+    text-align: justify;
+    text-indent: 2%;
+    text-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color: var(--font-default);
+}
+
+button{
+    padding: 1% 2%;
+    border: none;
+    border-radius: 8px;
+    font: 16pt Arial;
+    background: var(--main-color);
+    box-shadow: 1px 2px #00dd00, -1px 1px #00dd00;
+    color: var(--font-default);
+    text-shadow: 1px 1px 3px #000000;
+}
+
+li{
+    list-style-type: none;
+}
+h1{
+    color: var(--main-color);
+}
+/*=======[ Class Settings ]=======*/
+
+.cabec{
+    padding: 2;
+}
+
+.title{
+    margin:1%;
+    width: 21%;
+    font: bold 25pt 'Orbitron', sans-serif, Arial;
+    letter-spacing: 2px;
+}
+
+.menu{
+    margin: 2% -95% 0;
+    width: 100%;
+    background: linear-gradient(to left, #000000 10%, #00000066 80%);
+    height: 100vh;
+    overflow: hidden;
+    transition:margin 1s;
+}
+
+.menu:hover{
+    transition:margin 1s;
+    margin-left:0;
+}
+
+.slap{
+    height: 100vh;
+    background: var(--bg-box);
+    float: left;
+    width: 50%;
+    text-align: center;
+    position: relative;
+
+}
+.op{
+    background: #1c1c1c;
+    font: bold 15pt 'Orbitron', sans-serif, Arial;
+    width: 90%;
+    padding:1% 3%;
+    margin: 2%;
+}
+.op:hover{
+    background:#aa15ff;
+    text-shadow:0 0 3ox #000000;
+    
+}
+.bttop{
+    border: none;
+    border-radius: 50%;
+    font-size: 20pt;
+    width: 35px;
+    height: 35px;
+    color: #ffffffaa;
+    position: fixed;
+    left: 102%;
+    top: 90%;
+    text-shadow: 0 0 10px var(--back3);
+    box-shadow: 0 0 10px var(--main-color);
+    background:var(--back-transp);
+    padding: 3px;
+    text-align:center;
+    cursor: pointer;
+    transition: background .7s;
+}
+.bttop:hover{
+    color: var(--back-transp);
+    text-shadow:0 0 5px var(--main-color);
+    box-shadow: 0 0 10px var(--back3);
+    background: var(--main-transp);
+    transition: background .7s;
+}
+.bttop:active{
+    color: var(--color-default);
+}
+.active{
+    background:var(--main-color);
+    text-shadow:0 0 3px #000000;
+}
+
+.bttop{
+    width:40px;
+    height:40px;
+    margin-left:-10%;
+    line-height: 120%;
+}
+/*=========[ MEDIAQUERY ]==========*/
+@media only screen and (max-width:400px ) {
+    header{
+        text-align:center;
+        width:100%;
+        padding:-3% 1%;
+    }
+    .title{
+        color:#a0f;
+        font-size:18pt;
+        width:100%;
+    }
+    .slap{
+        width:90%
+    }
+    .op{
+        padding:5%;
+        margin:1% 0;
+    }
+    .bttop{
+        left:92%;
+    }
+}
