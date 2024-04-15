@@ -1,0 +1,95 @@
+/*=======[Set Fonts Import]=======*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{margin: 0;padding: 0;left: 0;top: 0;}
+
+body{
+    background: #333;
+    color: #ffffff;
+    font: normal 16pt Arial;
+    user-select: none;
+}
+::selection{
+    background: #00ff55;
+    color: #000;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*==================[ Header ]=================*/
+
+/*=============[ Title ]===========*/
+.titlehead{
+    font-family: 'Orbitron';
+    color: #00ff55;
+    letter-spacing: 5px;
+    width: 40%;
+    left: 8%;
+    position: relative;
+    padding:0 2%;
+}
+/*=============[ Menu ]============*/
+.opt_menu{
+    box-shadow:2px 2px 0 #00ff55;
+    border-radius: 5px;
+    font: bold 14pt Arial;
+    position: relative;
+    text-align: center;
+    padding: 5% 10px;
+    margin: 0 20px;
+    width:60%;
+    
+}
+.opt_menu:hover{
+    background: #fff;
+    color: #000;
+}
+.actived{
+    color: #00ff55;
+    background: #000;
+}
+.menu{
+    width: 45%;
+    display: flex;
+    padding:1% 2%;
+    justify-content: right;
+    align-items: center;
+    padding: 0 2%;
+}
+.cabec{
+    background: #111;
+    display: flex;
+    padding:1% 2%;
+    box-shadow:0 5px 10px #00ff33;
+    
+}
+
+.container{
+    width: 80%;
+    margin:0% 8%;
+    padding: 2%;
+}
+.main{
+    display: flex;
+    border-radius: 8px;
+    background: #111;
+    padding: 2%;
+    margin: 2%;
+}
+p{
+    margin: 2%;
+    text-indent: 5%;
+    text-align: justify;
+    width: 100%;
+    user-select:text;
+}
+.subs{
+    color: #00ff55;
+    margin: 2%;
+}
+.bot{
+    width: 50%;
+    border-radius: 8px;
+}
