@@ -1,6 +1,7 @@
 @media only screen and (max-width:500px){
     .cabec{
         flex-direction: column;
+        z-index: 2;
     }
     .titlehead{
         width: 100%;
@@ -13,21 +14,22 @@
         font: bolder 18pt Orbitron;
         display: block;
         background: #000;
-        left: 84vw;
-        top:15vw;
+        left: 73vw;
+        top:26vw;
         position: relative;
         padding: 2% 7%;
-        border-radius: 0 8px 8px 0;
+        border-radius:0 0 0 8px;
         z-index: 1;
         border: none;
-        box-shadow: 2px 2px #00ff66; 
+        box-shadow: -2px 2px #00ff66;
+        transform:rotateZ(-90deg);
     }
     .menu{
         left:-120vw;
         position: fixed;
-        width: 100%;
+        width: 96%;
         height: 100vh;
-        background: #111d;
+        background: #111e;
         align-items: center;
         justify-content: top;
         flex-direction: column;
@@ -36,6 +38,8 @@
     }
     .menu:hover{
         left: 0vw;
+        box-shadow: inset 0 0 20px #00ff66;
+        transition: box-shadow 1s;
     }
     .opt_menu{
         transition: margin .5s, font .5s, transform 1s;
@@ -79,7 +83,6 @@
     }
     .bot{
         width: 100%;
-        height: 30vh;
     }
     .about{
         width: 100%;
