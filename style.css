@@ -299,3 +299,13 @@ footer{
     width: 60%;
     margin:5% 20%;
 }
+.load{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #000e;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
