@@ -96,10 +96,10 @@
         flex-direction: column;
     }
     .card{
-        height: 30vh;
+        height: 45vh;
     }
     .b{
-        height: 45vh;
+        height: 65vh;
         width: 80%;
         margin: 10% 8%;
     }
