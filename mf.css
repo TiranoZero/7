@@ -1,0 +1,93 @@
+@media only screen and (max-width:500px){
+    .cabec{
+        flex-direction: column;
+    }
+    .titlehead{
+        width: 100%;
+        text-align: center;
+        left: 0;
+        font-size: 16pt;
+
+    }
+    .toug{
+        font: bolder 18pt Orbitron;
+        display: block;
+        background: #000;
+        left: 84vw;
+        top:15vw;
+        position: relative;
+        padding: 2% 7%;
+        border-radius: 0 8px 8px 0;
+        z-index: 1;
+        border: none;
+        box-shadow: 2px 2px #00ff66; 
+    }
+    .menu{
+        left:-120vw;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #111d;
+        align-items: center;
+        justify-content: top;
+        flex-direction: column;
+        transition: all 1s;
+        
+    }
+    .menu:hover{
+        left: 0vw;
+    }
+    .opt_menu{
+        transition: margin .5s, font .5s, transform 1s;
+        margin: 2vh 0;
+        width: 70vw;
+        font: bolder 18pt Arial;
+        background: #000;
+        
+    }
+    .container{
+        margin:15% 0;
+        width:90%;
+
+    }
+
+
+    .main{
+        width: 95%;
+        margin: 5% 0;
+        padding: 5%;
+        flex-direction: column;
+    }
+    .info{
+        flex-direction: column;
+
+    }
+    .inf, .refs{
+        width: 100%;
+        left: 0;
+        margin: 5% 0;
+    }
+
+    .loc{
+        width: 50px;
+        height: 50px;
+
+    }
+    .sctt{
+        width: 95%;
+        align-items: center;
+    }
+    .bot{
+        width: 100%;
+        height: 30vh;
+    }
+    .about{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width:700px){
+
+
+}
