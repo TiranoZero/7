@@ -84,6 +84,9 @@
     .about{
         width: 100%;
     }
+    .load{
+        display: flex;
+    }
 }
 
 

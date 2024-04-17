@@ -8,7 +8,31 @@
     <link rel="stylesheet" href="../mf.css">
     <meta charset="UTF-8">
 
-
+    <style>
+        body{
+            overflow: none;
+        }
+        .load{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            background: #000e;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .loading{
+            width: 110px;
+            height: 80px;
+            filter: drop-shadow(0 0 10px #f00);
+        }
+        .ld{
+            font: bolder 18px Orbitron;
+            text-shadow: 0 0 10px #0f6;
+            margin: 10% 0;
+        }
+    </style>
 </head>
 <body>
     <header class="cabec">
@@ -21,7 +45,10 @@
             <a href="/contato"><nav class="opt_menu">Contato</nav></a>
         </div>
     </header>
-
+    <div class="load">
+        <img src="https://animaniacos.com/images/gifs/web/obras/obra0088.gif" alt="" class="loading">
+        <h1 class="title ld">Em Desenvolvimento...</h1>
+    </div>
     <section class="container">
         <div class="main prod">
             <h1 class="title">Produtos Alpha</h1>
@@ -59,7 +86,7 @@
             <div class="field">
                 <div class="modal">
                     <h1 class="title">Finalizar Compra</h1>
-                        <input type="text" name="nome" id="nome" required placeholder="Digite seu nome...">
+                        <input type="text" name="nome" max="20" id="nome" required placeholder="Digite seu nome...">
                         <input type="submit" id="buy" value="Fazer Pedido">
 
                 </div>
@@ -116,6 +143,7 @@ comprar.addEventListener("click", ()=>{
 
 
         </script>
+
     </section>
     <footer>
         Desenvolvido por Lord - 2049 &copy;
