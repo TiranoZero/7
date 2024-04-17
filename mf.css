@@ -33,6 +33,7 @@
         align-items: center;
         justify-content: top;
         flex-direction: column;
+        transition: all 1s;
         transition: left .5s, font .5s, transform 1s, box-shadow 1s;
         
     }
