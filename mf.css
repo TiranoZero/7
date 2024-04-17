@@ -59,7 +59,7 @@
     .main{
         width: 95%;
         margin: 5% 0;
-        padding: 5%;
+        padding: 5% ;
         flex-direction: column;
     }
     .info{
@@ -88,7 +88,23 @@
         width: 100%;
     }
     .load{
+        display: none;
+    }
+    .cards{
         display: flex;
+        flex-direction: column;
+    }
+    .card{
+        height: 30vh;
+    }
+    .b{
+        height: 45vh;
+        width: 80%;
+        margin: 10% 8%;
+    }
+    .sob{
+        width: 90%;
+        margin: 10% 0;
     }
 }
 
