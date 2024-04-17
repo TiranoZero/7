@@ -50,11 +50,6 @@
             <a href="/contato"><nav class="opt_menu">Contato</nav></a>
         </div>
     </header>
-    <div class="load">
-        <img src="https://animaniacos.com/images/gifs/web/obras/obra0088.gif" alt="" class="loading">
-        <h1 class="title ld">Em Desenvolvimento...</h1>
-        <a href="/"><button class="bk">Voltar</button></a>
-    </div>
     <section class="container">
         <div class="main prod">
             <h1 class="title">Produtos Alpha</h1>
@@ -83,7 +78,7 @@
                     <h1 class="label">Hospedagem de projetos</h1>
                     <p class="sob">Fazer o site ou bot não inclui colocar no ar, a hospedagem permitirá que outras pessoas encontrem seu site, ou que seu bot fique online 24h por dia 7 dias por semana</p>
                     <h3 class="preco">R$ 95,00/mês</h3>
-                    <button class="buy">Fazer Pedido</button>
+                    <button class="buy" id="host">Fazer Pedido</button>
                 </div>
             </div>
         </div>
@@ -102,49 +97,55 @@
 
         <script>
             const btn1 = document.querySelector("#modelo") 
-const btn2 = document.querySelector("#bot") 
-const btn3 = document.querySelector("#custom")
+            const btn2 = document.querySelector("#bot") 
+            const btn3 = document.querySelector("#custom")
+            const btn4 = document.querySelector("#host")
 
-const btn = document.querySelectorAll('.buy')
+            const btn = document.querySelectorAll('.buy')
 
-const nm = document.querySelector("#nome")
-const comprar = document.querySelector("#buy")
+            const nm = document.querySelector("#nome")
+            const comprar = document.querySelector("#buy")
 
-const ent = document.querySelector(".field")
+            const ent = document.querySelector(".field")
 
-let nome, produto, msg
-const link = 'https://wa.me/555181524732?text=';
-
-
-
+            let nome, produto, msg
+            const link = 'https://wa.me/555181524732?text=';
 
 
-btn1.addEventListener('click', ()=>{
-    produto = "site de templates"
-    ent.style.display = "flex"
-})
-
-btn2.addEventListener('click', ()=>{
-    produto = "bot discord"
-    ent.style.display = "flex"
-})
-
-btn3.addEventListener('click', ()=>{
-    produto = "site customizado"
-    ent.style.display = "flex"
-})
 
 
-comprar.addEventListener("click", ()=>{
-    nome = nm.value;
-    msg = "Pedido: "+ produto + `%0ANome: `+ nome
-  
-    open(link+msg)
-    ent.style.display = "none";
-    console.log(msg)
-  
 
-});
+            btn1.addEventListener('click', ()=>{
+                produto = "site de templates"
+                ent.style.display = "flex"
+            })
+
+            btn2.addEventListener('click', ()=>{
+                produto = "bot discord"
+                ent.style.display = "flex"
+            })
+
+            btn3.addEventListener('click', ()=>{
+                produto = "site customizado"
+                ent.style.display = "flex"
+            })
+
+            btn4.addEventListener('click', ()=>{
+                produto = "Hospedagem"
+                ent.style.display = "flex"
+            })
+
+
+            comprar.addEventListener("click", ()=>{
+                nome = nm.value;
+                msg = "Pedido: "+ produto + `%0ANome: `+ nome
+            
+                open(link+msg)
+                ent.style.display = "none";
+                console.log(msg)
+            
+
+            });
 
 
 
