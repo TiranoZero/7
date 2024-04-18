@@ -3,5 +3,8 @@ Disallow: /nogooglebot/
 
 User-agent: *
 Allow: /
+Allow: /sobre/
+Allow: /produtos/
+Allow: /contato/
 
 Sitemap: https://projetoalpha.tech/sitemap.xml
